@@ -1,0 +1,1 @@
+Git clone and combine all files into one project
