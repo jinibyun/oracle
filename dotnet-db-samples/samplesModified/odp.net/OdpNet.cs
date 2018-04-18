@@ -98,6 +98,34 @@ namespace odp.net
             }
         }
 
+        public void ClientFactory()
+        {
+            using (DbConnection conn = factory.CreateConnection())
+            {
+                try
+                {
+                    conn.ConnectionString = constr;
+                    conn.Open();
+
+                    DbCommand cmd = factory.CreateCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText = "select * from emp";
+
+                    // OracleDataRader or DbDataReader
+                    DbDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                        Console.WriteLine(reader["EMPNO"] + " : " + reader["ENAME"]);
+
+                    reader.Close();                    
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
+                }
+            }
+        }
+
         
     }
 }

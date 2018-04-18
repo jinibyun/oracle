@@ -12,9 +12,10 @@ namespace odp.net
         {
             var odpNet = new OdpNet();
 
-            odpNet.DataSourceEnumerator();
+            // odpNet.DataSourceEnumerator();
             // odpNet.GetSchema();
             // odpNet.DataReader();
+            odpNet.ClientFactory();
         }
     }
 }
