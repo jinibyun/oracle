@@ -10,12 +10,30 @@ namespace odp.net
     {
         static void Main(string[] args)
         {
-            var odpNet = new OdpNet();
-
+            // 0. BASIC
+            // var odpNet = new OdpNet();
             // odpNet.DataSourceEnumerator();
             // odpNet.GetSchema();
             // odpNet.DataReader();
-            odpNet.ClientFactory();
-        }
+            // odpNet.ClientFactory();
+            
+            // 1. REF CURSOR
+            // var cursorTest = new RefCursor();
+            // cursorTest.refCursor();
+            // cursorTest.refCursor2();
+            // cursorTest.refCursor3();
+            // cursorTest.refCursor4();
+            // cursorTest.refCursor5();
+            // cursorTest.refCursor6();
+            // cursorTest.refCursor7();
+
+            // 2. Array Binding
+            // var arrayBind = new ArrayBind();
+            // arrayBind.Testing();
+
+            // 3. Associate Array
+            var associateArray = new AssociateArray();
+            associateArray.Testing();
+        }   
     }
 }

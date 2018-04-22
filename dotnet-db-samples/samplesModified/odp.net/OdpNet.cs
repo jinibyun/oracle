@@ -1,4 +1,5 @@
 ﻿using Oracle.ManagedDataAccess.Client;
+using Oracle.ManagedDataAccess.Types;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,17 +10,9 @@ using System.Threading.Tasks;
 
 namespace odp.net
 {
-    public class OdpNet
-    {
-        private const string constr = "User Id=scott; Password=tiger; Data Source=JINIDEV;";
-        private const string ProviderName = "Oracle.ManagedDataAccess.Client";
-        private DbProviderFactory factory;
+    public class OdpNet: BaseClass
+    {        
 
-        public OdpNet()
-        {
-            factory = DbProviderFactories.GetFactory(ProviderName);
-        }
-        
         // Data Source Enumerator
         // Go to app.config
         public void DataSourceEnumerator()
@@ -125,7 +118,7 @@ namespace odp.net
                 }
             }
         }
-
+        
         
     }
 }
