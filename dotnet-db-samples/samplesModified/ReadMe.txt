@@ -1,1 +1,1 @@
-Git clone and combine all files into one project
+Git clone and combine all files into one project for actualy necessary codes, which means "NOT" all codes have been into "SamplesModified" project
