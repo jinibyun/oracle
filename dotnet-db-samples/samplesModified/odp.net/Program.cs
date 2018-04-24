@@ -32,8 +32,8 @@ namespace odp.net
             // arrayBind.Testing();
 
             // 3. Associate Array
-            var associateArray = new AssociateArray();
-            associateArray.Testing();
+            // var associateArray = new AssociateArray();
+            // associateArray.Testing();
         }   
     }
 }
